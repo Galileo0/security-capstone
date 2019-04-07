@@ -1,0 +1,85 @@
+-- MySQL dump 10.16  Distrib 10.1.37-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: ntl_project_final
+-- ------------------------------------------------------
+-- Server version	10.1.37-MariaDB-0+deb9u1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sender` int(11) DEFAULT NULL,
+  `subject` varchar(100) DEFAULT NULL,
+  `message` varchar(1000) DEFAULT NULL,
+  `seen` int(11) DEFAULT NULL,
+  `rec_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `messages`
+--
+
+LOCK TABLES `messages` WRITE;
+/*!40000 ALTER TABLE `messages` DISABLE KEYS */;
+INSERT INTO `messages` VALUES (3,11,'RkVvNWpOaXhaOEpnSUhDbWZKWEtIZz09','NDRFajNnVnNkQUF2TXZxek90bWR6RG9CdTdZaitKU0NPYS9xN1kwcE5tTT0=',0,10),(4,11,'VU8vRUtsVGNHLzBCWGduVFlPdGxFZz09','V01CYk1GYlR3eUYvY3BuSk9SeUo3QT09',0,10),(5,13,'NGo5N2wrd0IyekhwaXlNWUtKampudz09','cFNRZ0piRFMxYWp0S0w4VVVCY2xtZz09',0,13),(6,13,'WGl6aFQ0cjRjZ1ppZHNXUk9zK0Z0Zz09','VC9YYmhkK2xVaXFPTDdncFhRRWxTdz09',0,11);
+/*!40000 ALTER TABLE `messages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(200) DEFAULT NULL,
+  `user_pass` varchar(200) DEFAULT NULL,
+  `user_email` varchar(200) DEFAULT NULL,
+  `user_first` varchar(200) DEFAULT NULL,
+  `user_last` varchar(200) DEFAULT NULL,
+  `user_uid` varchar(55) DEFAULT NULL,
+  `gender` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (10,'YVJuamtQZHNuQ3ZReS9zN1BKTGVQZz09','adcd7048512e64b48da55b027577886ee5a36350','UlNzYTFOT2VSbFZZeXZWdzJTcC93UT09','UWlOVGt6ZTVrS25zaG5ORldqajdnZz09','UXZ2eFpwTloxNVVmcGJkbWl1VllrQT09',NULL,'UExML3VxdnQyRy9vL3NHZjZ3SHRsdz09'),(11,'YzhQQmRHaGNjL080R0lxUkZPRkhNUT09','adcd7048512e64b48da55b027577886ee5a36350','b3Yya1QxWmp2MTFKbFRZS2twR0JnQT09','eVpRZXZlS0E0bzBxN3V1aHdodEtSdz09','d1M0YjV5VXZPVFNudmJSWVRBM2VKUT09',NULL,'UExML3VxdnQyRy9vL3NHZjZ3SHRsdz09'),(12,'MUdBSE8zQVVsSVRMa2JJb3BuVGRDUT09','e1f7ce71b1b55fdfca411783c608518714d0fde8','OSsyZkZHSEcwU2hUMWZrby90TXJvdWhXVDJmUzRaVStVRTR1Q0VKZi9KMD0=','MUdBSE8zQVVsSVRMa2JJb3BuVGRDUT09','MUdBSE8zQVVsSVRMa2JJb3BuVGRDUT09',NULL,'bkZaL2dZV3BGSjhlanRpM0lTb0xnQT09'),(13,'UGJjZUN6OElmcmpHM3gzT2pVRUhtQT09','85f2f25404389f8c0bd2ae22e95e4d772b3b7ddf','OSsyZkZHSEcwU2hUMWZrby90TXJvdWhXVDJmUzRaVStVRTR1Q0VKZi9KMD0=','WVNyRHcvTW1ZSjBUd0g0OGI4a0JEQT09','bHYxM1plbVRmcDJHcVdVeHVTRWJ1QT09',NULL,'UExML3VxdnQyRy9vL3NHZjZ3SHRsdz09');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-04-04 20:01:22

@@ -1,0 +1,178 @@
+
+body, html {
+    height: 100%;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-img {
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  margin-top: 0px;
+
+
+}
+.b2g-img {
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+margin-top: 0px;
+
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    left: 30%;
+    margin: 100px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: #FFFFFF90;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*Home Nav bar */
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.container-singup{
+    position: absolute;
+    left: 30%;
+    margin: 30px;
+    max-width: 500px;
+    padding: 38px;
+    background-color: #FFFFFF90;
+    align: Center;
+}
+
+
+.container-vac{
+    position: absolute;
+    left: 30%;
+    margin: 30px;
+    max-width: 500px;
+    padding: 38px;
+    background-color: white;
+    align: Center;
+    opacity: 20%;
+}
+
+.bgv-img {
+    /* The image used */
+    background-image: url("vac.jpg");
+
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+
+
+}
+.bgr-img {
+    /* The image used */
+    background-image: url("tim.jpg");
+
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+
+
+}
+
+.bgs-img {
+    /* The image used */
+    background-image: url("4890.jpg");
+
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+margin-top: 0px;
+
+}

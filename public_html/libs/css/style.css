@@ -1,0 +1,101 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* about start */
+
+.about {
+    background: #ededed;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+.about .title {
+    margin-bottom: 50px;
+}
+
+.about .left {
+    padding: 10px;
+}
+
+.about .left p {
+    font-size: 20px;
+    color: #222;
+    line-height: 30px;
+}
+
+.about .right img {
+    width: 100%;
+}
+
+/* about end */
+
+/* skills start */
+
+.skills {
+    padding-bottom: 40px;
+}
+
+.skills .left {
+    padding-top: 100px;
+}
+
+/* skills end */
+
+/* work start */
+
+.work {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.work .title {
+    margin-bottom: 50px;
+}
+
+/* work end */
+
+/* team start */
+
+.team {
+    padding-top: 50px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 50px;
+}
+
+.team .title {
+    margin-bottom: 50px;
+}
+
+.team .member img {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* team end */
+
+/* contact start */
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact .links li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* contact end  */
+
+footer {
+    padding: 20px 0;
+    background: #444;
+    color: #fff;
+    font-size: 16px;
+}
